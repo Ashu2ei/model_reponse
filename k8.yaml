@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+   name: model-pod
+spec:
+   containers:
+   - name: model-container01
+     image: models
+     ports:
+     - containerPort: 5050
